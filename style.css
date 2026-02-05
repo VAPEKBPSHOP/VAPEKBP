@@ -1,5 +1,9 @@
-/* Общий ресет */
-* { margin:0; padding:0; box-sizing:border-box; }
+/* ====================== ОБЩИЙ РЕСЕТ ====================== */
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
 
 body {
   font-family: system-ui, sans-serif;
@@ -8,8 +12,14 @@ body {
   line-height: 1.6;
 }
 
-.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+/* ====================== КОНТЕЙНЕР ====================== */
+.container { 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+}
 
+/* ====================== ШАПКА ====================== */
 header {
   background: #111;
   position: sticky;
@@ -19,19 +29,38 @@ header {
   border-bottom: 1px solid #222;
 }
 
-nav { display: flex; justify-content: space-between; align-items: center; }
+nav { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
 
-.logo { font-size: 1.8rem; font-weight: bold; color: #39ff14; text-decoration: none; }
+.logo { 
+  font-size: 1.8rem; 
+  font-weight: bold; 
+  color: #39ff14; 
+  text-decoration: none; 
+}
+
+/* Меню в шапке — используем gap вместо margin для лучшей адаптивности */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* расстояние между ссылками */
+}
 
 .nav-links a {
   color: #ccc;
   text-decoration: none;
-  margin-left: 25px;
   transition: color 0.3s;
+  white-space: nowrap; /* запрещаем перенос слов */
 }
 
-.nav-links a:hover { color: #39ff14; }
+.nav-links a:hover { 
+  color: #39ff14; 
+}
 
+/* ====================== ГЕРОЙ-СЕКЦИЯ ====================== */
 .hero {
   position: relative;
   text-align: center;
@@ -53,9 +82,23 @@ nav { display: flex; justify-content: space-between; align-items: center; }
   pointer-events: none;
 }
 
-.hero h1 { font-size: 4rem; color: #f0f0f0; margin-bottom: 15px; position: relative; z-index: 2; }
-.hero p { font-size: 1.5rem; color: #ccc; margin-bottom: 30px; position: relative; z-index: 2; }
+.hero h1 { 
+  font-size: 4rem; 
+  color: #f0f0f0; 
+  margin-bottom: 15px; 
+  position: relative; 
+  z-index: 2; 
+}
 
+.hero p { 
+  font-size: 1.5rem; 
+  color: #ccc; 
+  margin-bottom: 30px; 
+  position: relative; 
+  z-index: 2; 
+}
+
+/* ====================== КНОПКИ ====================== */
 .btn, .tg-btn {
   background: #39ff14;
   color: #000;
@@ -78,10 +121,19 @@ nav { display: flex; justify-content: space-between; align-items: center; }
   box-shadow: 0 0 25px rgba(0,255,157,0.7);
 }
 
-.section { padding: 80px 0; }
+/* ====================== ОБЩИЕ СЕКЦИИ ====================== */
+.section { 
+  padding: 80px 0; 
+}
 
-h2 { text-align: center; font-size: 2.8rem; color: #39ff14; margin-bottom: 50px; }
+h2 { 
+  text-align: center; 
+  font-size: 2.8rem; 
+  color: #39ff14; 
+  margin-bottom: 50px; 
+}
 
+/* ====================== КАРТОЧКИ ТОВАРОВ ====================== */
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -137,13 +189,10 @@ h2 { text-align: center; font-size: 2.8rem; color: #39ff14; margin-bottom: 50px;
   padding: 0 10px 15px;
 }
 
+/* Статусы наличия */
 .stock-yes { color: #39ff14; font-weight: bold; }
 .stock-no { color: #ff4444; font-weight: bold; }
-
-.big-stock {
-  font-size: 1.6rem;
-  margin: 20px 0;
-}
+.big-stock { font-size: 1.6rem; margin: 20px 0; }
 
 .out-of-stock-banner {
   background: rgba(255, 68, 68, 0.2);
@@ -156,6 +205,7 @@ h2 { text-align: center; font-size: 2.8rem; color: #39ff14; margin-bottom: 50px;
   font-weight: bold;
 }
 
+/* ====================== О НАС И ФУТЕР ====================== */
 .tg-links { text-align: center; margin: 30px 0; }
 .tg-links .tg-btn { margin: 10px; }
 
@@ -169,6 +219,7 @@ footer {
 
 footer a { color: #39ff14; text-decoration: none; }
 
+/* ====================== ВОЗРАСТНОЙ ГЕЙТ ====================== */
 .age-gate {
   position: fixed;
   inset: 0;
@@ -185,6 +236,7 @@ footer a { color: #39ff14; text-decoration: none; }
 .age-gate p { font-size: 1.4rem; margin-bottom: 40px; }
 .age-gate .btn { margin: 10px; padding: 18px 44px; font-size: 1.4rem; }
 
+/* ====================== МОДАЛЬНОЕ ОКНО ====================== */
 .modal {
   display: none;
   position: fixed;
@@ -265,28 +317,55 @@ footer a { color: #39ff14; text-decoration: none; }
   box-shadow: 0 0 10px rgba(255,68,68,0.4);
 }
 
+/* ====================== АДАПТИВ ====================== */
+
+/* Планшеты (до 768px) */
 @media (max-width: 768px) {
   .hero { padding: 100px 0 120px; }
   .hero h1 { font-size: 3rem; }
   .hero p { font-size: 1.3rem; }
   h2 { font-size: 2.4rem; }
-  .products { grid-template-columns: repeat(2, 1fr); gap: 18px; }
-  .product img { height: 160px; }
-  .product h3 { font-size: 1.2rem; }
-  .product p { font-size: 0.95rem; }
+
+  /* Шапка */
+  .logo { font-size: 1.6rem; }
+  .nav-links { gap: 20px; }
+  .nav-links a { font-size: 1.1rem; }
+
+  /* Товары по 2 в ряд */
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .product img { height: 140px; }
+  .product h3 { font-size: 1.1rem; }
+
   .btn, .tg-btn { padding: 18px 40px; font-size: 1.2rem; }
 }
 
+/* Телефоны (до 480px) */
 @media (max-width: 480px) {
   .hero { padding: 80px 0 100px; }
   .hero h1 { font-size: 2.5rem; }
   .hero p { font-size: 1.2rem; }
   .container { padding: 0 15px; }
   h2 { font-size: 2.2rem; margin-bottom: 40px; }
-  .products { grid-template-columns: 1fr; gap: 20px; }
-  .product img { height: 200px; }
-  .product h3 { font-size: 1.4rem; }
-  .product p { font-size: 1rem; padding: 0 15px 20px; }
+
+  /* Шапка — ещё меньше шрифт и отступы, чтобы точно помещалось */
+  .logo { font-size: 1.4rem; }
+  .nav-links { gap: 12px; }
+  .nav-links a { font-size: 1rem; }
+  header { padding: 10px 0; }
+
+  /* Товары по 2 в ряд (переопределяем старое правило) */
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .product img { height: 130px; }
+  .product h3 { font-size: 1.05rem; }
+  .product p { font-size: 0.9rem; }
+
+  /* Модалка и остальное */
   .modal-content { width: 95%; padding: 40px 20px; }
   #modal-img { height: 300px; }
   .variants-list li { padding: 18px 20px; font-size: 1.3rem; }
