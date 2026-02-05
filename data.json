@@ -1,0 +1,109 @@
+{
+  "liquids": [
+    {
+      "name": "Yummy",
+      "description": "Сочные и новые вкусы, солевой никотин",
+      "quantity": 5,
+      "image": "https://images.steamusercontent.com/ugc/16216430808342603727/8328B53B6A46F7A2ABE5B0007567B35BAE83DF62/",
+      "flavors": [
+        { "name": "Черничный йогурт", "available": true },
+        { "name": "Клюква-Грейпфрут", "available": true },
+        { "name": "Ягоды с мятой", "available": true }
+      ]
+    },
+    {
+      "name": "Dota",
+      "description": "Крепкие и насыщенные вкусы, солевой никотин",
+      "quantity": 6,
+      "image": "https://севастопольскийрынок.рф/wp-content/uploads/2024/12/zhidkost-dota-hard-phantom-assassin-arbuznaya-zhvachka-30ml-2-800x800-1.jpg",
+      "flavors": [
+        { "name": "Клубнично-банановая жвачка", "available": true },
+        { "name": "Лесные ягоды", "available": true },
+        { "name": "Энергетик киви-яблоко", "available": true },
+        { "name": "Вишневый блейзер", "available": true },
+        { "name": "Виноград-арбуз", "available": true }
+      ]
+    },
+    {
+      "name": "Podonki sour",
+      "description": "Популярные вкусы, солевой никотин",
+      "quantity": 15,
+      "image": "https://images.steamusercontent.com/ugc/15568043712411077546/60E116F7443664E0263408E838B35713DD426474/",
+      "flavors": [
+        { "name": "Кислая ежевика-голубика", "available": true },
+        { "name": "Кислый виноградный чупа-чупс", "available": true },
+        { "name": "Кислый морс из лесных ягод", "available": true },
+        { "name": "Кислая фруктовая жвачка", "available": true },
+        { "name": "Кислый мохито клубничный", "available": true }
+      ]
+    },
+    {
+      "name": "Hotspot / Манашка",
+      "description": "Энергичные вкусы, премиум солевые",
+      "quantity": 0,
+      "image": "https://images.steamusercontent.com/ugc/12063308896083540760/4C4D83484A3EA06C6DAE1619939C4FE76D28328F/",
+      "flavors": [
+        { "name": "Банан кокос", "available": false },
+        { "name": "Черная смородина", "available": false },
+        { "name": "Свежее манго", "available": false },
+        { "name": "Виноград яблоко", "available": false },
+        { "name": "Клубничный мохито", "available": false }
+      ]
+    }
+  ],
+  "pods": [
+    {
+      "name": "PASITO 2",
+      "description": "Компактный, вкусный, надёжный",
+      "quantity": 0,
+      "image": "https://images.steamusercontent.com/ugc/12960028524356469870/3DDE8220DE2010E2C94539A879F87506406448A0/",
+      "colors": [
+        { "name": "Черный карбон", "available": false },
+        { "name": "Шоколадный", "available": false },
+        { "name": "Индиго синий", "available": false },
+        { "name": "Неоновый фиолетовый", "available": false },
+        { "name": "Розовый градиент", "available": false }
+      ]
+    },
+    {
+      "name": "Aegis 5",
+      "description": "Прочный, мощный, водонепроницаемый",
+      "quantity": 0,
+      "image": "https://images.steamusercontent.com/ugc/13823952898496437830/D845A125317B77D6413A274C4E6DAEC34D00DF48/",
+      "colors": [
+        { "name": "Белый", "available": false },
+        { "name": "Красный", "available": false },
+        { "name": "Серебряный", "available": false },
+        { "name": "Черный", "available": false },
+        { "name": "Зеленый", "available": false },
+        { "name": "Синий", "available": false }
+      ]
+    },
+    {
+      "name": "Pasito 3",
+      "description": "Улучшенная версия, яркий вкус",
+      "quantity": 0,
+      "image": "https://images.steamusercontent.com/ugc/12700457158475017086/D3B5BD44480DE60F4515DCAB568574FBEDE8BA3B/",
+      "colors": [
+        { "name": "Матовый черный", "available": false   },
+        { "name": "Серый космос", "available": false },
+        { "name": "Синий азур", "available": false },
+        { "name": "Камуфляж зеленый", "available": false },
+        { "name": "Классический красный", "available": false }
+      ]
+    },
+    {
+      "name": "XROS 5 mini",
+      "description": "Мини-версия, компактный и мощный",
+      "quantity": 0,
+      "image": "https://images.steamusercontent.com/ugc/10502232536352000681/7B163F3531B4BC2743274268EB5D50047C253940/",
+      "colors": [
+        { "name": "Лайм зеленый", "available": false },
+        { "name": "Градиент синий-фиолетовый", "available": false },
+        { "name": "Черный", "available": false },
+        { "name": "Фиолетовый", "available": false },
+        { "name": "Небесно-голубой", "available": false }
+      ]
+    }
+  ]
+}
