@@ -55,26 +55,26 @@
     {
       "name": "PASITO 2",
       "description": "Компактный, вкусный, надёжный",
-      "quantity": 0,
+      "quantity": 1,
       "image": "https://images.steamusercontent.com/ugc/12960028524356469870/3DDE8220DE2010E2C94539A879F87506406448A0/",
       "colors": [
         { "name": "Черный карбон", "available": false },
         { "name": "Шоколадный", "available": false },
-        { "name": "Индиго синий", "available": false },
+        { "name": "Молохит", "available": true },
         { "name": "Неоновый фиолетовый", "available": false },
         { "name": "Розовый градиент", "available": false }
       ]
     },
     {
-      "name": "Aegis 5",
+      "name": "Aegis Hero 5",
       "description": "Прочный, мощный, водонепроницаемый",
-      "quantity": 0,
+      "quantity": 2,
       "image": "https://images.steamusercontent.com/ugc/13823952898496437830/D845A125317B77D6413A274C4E6DAEC34D00DF48/",
       "colors": [
         { "name": "Белый", "available": false },
-        { "name": "Красный", "available": false },
+        { "name": "Красный", "available": true },
         { "name": "Серебряный", "available": false },
-        { "name": "Черный", "available": false },
+        { "name": "Черный", "available": true },
         { "name": "Зеленый", "available": false },
         { "name": "Синий", "available": false }
       ]
@@ -82,12 +82,12 @@
     {
       "name": "Pasito 3",
       "description": "Улучшенная версия, яркий вкус",
-      "quantity": 0,
+      "quantity": 2,
       "image": "https://images.steamusercontent.com/ugc/12700457158475017086/D3B5BD44480DE60F4515DCAB568574FBEDE8BA3B/",
       "colors": [
-        { "name": "Матовый черный", "available": false   },
+        { "name": "Матовый черный", "available": true },
         { "name": "Серый космос", "available": false },
-        { "name": "Синий азур", "available": false },
+        { "name": "Синий азур", "available": true },
         { "name": "Камуфляж зеленый", "available": false },
         { "name": "Классический красный", "available": false }
       ]
@@ -107,3 +107,4 @@
     }
   ]
 }
+
